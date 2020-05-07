@@ -1,6 +1,29 @@
 :root {
-    --primary-text-color:;
-    --title-text-color:;
-    --accent-color:;
-    --primary-background-color:#000000;
+    --primary-text-color:#757575;;
+    --title-text-color:#212121;
+    --accent-color:#2196F3;
+    --primary-background-color:#FFFFFF;
+    --accent-background-color:#F5F4FA;
 }
+.logo{
+color:var(--accent-color) ; 
+}
+.logo.logo-head{
+    color:var(-title-text-color);
+}
+
+.navigation {
+    var(--title-text-color:#212121;)
+    }
+
+.navigation:hover {
+color:#2196F3;)
+}
+
+.navigation:focus {
+    color:#2196F3;)
+    }
+
+    .navigation:active {
+        color:#2196F3;)
+        }
