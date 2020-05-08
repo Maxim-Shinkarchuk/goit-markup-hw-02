@@ -3,37 +3,175 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --accent-background-color:#F5F4FA;
+    --title-second-text-color:#FFFFFF;
 }
-
+/* стили для боди */
 body{
     background-color:#FFFFFF ;
     color: var(--primary-text-colorprimary-text-color);
-}
+       }
+/* Убираем маркеры */
+ul {list-style-type: none;}
 
+/* стили для хедера */
 header{
-    color: var(--title-text-color:#212121;);
-}
-.logo{
-color:var(--accent-color);
-}
-.logo1{
-    color: var(--title-text-color);
-}
-
-
-.navigation {
-    var(--title-text-color:#212121;)
-    }
-
-.navigation:hover {
-color:#2196F3;)
-}
-
-.navigation:focus {
-    color:#2196F3;)
-    }
-
-.navigation:active {
-        color:#2196F3;)
+        color: var(--title-text-color:#212121;);
         }
-        
+    /*лого*/
+    .logo{
+        color:var(--accent-color);
+        }
+    .logo-header{
+        color: var(--title-text-color);
+        }
+    .logo-footer{
+        color: var(--accent-background-color);
+
+        }
+
+    /*стиль навигации*/
+    .site-nav .list {
+        var(--title-text-color:#212121;)
+        }
+    .site-nav .link:hover,
+    .site-nav .link:focus, 
+    .site-nav .link:active{
+        color:var(--accent-color);
+    }
+    .site-nav .link.curent{
+        color:var(--accent-color);
+}    
+    /*стиль адреса*/
+              }
+    .adress .list {var(--title-text-color:#212121;)}
+
+    .adress-link:hover,
+    .adress-link:focus{
+        color:var(--accent-color);  
+        }
+    /*стиль кнопок*/
+    .button{
+        color: var(--accent-background-color);
+        background-color: var(--accent-color);
+        }
+    /*стиль главного фона и цвет заголовка*/      
+    .section{
+        background-color:rgba(47, 48, 58, 0.8); ;
+        color: var(--title-second-text-color);}   
+
+    /*особенности*/
+    .features list{
+
+}
+    .features .title{
+        color: var(--title-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        }
+    .features .image{
+        background-color: var(--accent-background-color);
+        }   
+    .features .image:hover,
+    .features .image:focus,
+    .features .image:active
+        { background-color: var(--accent-color);}
+
+    .features .text{
+        color: var(--primary-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em
+        }
+        /*наш профиль*/
+    .profile .title{
+            font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        }   
+
+    .profile .text-title {
+        color: var(--title-second-text-color);
+        background: rgba(47, 48, 58, 0.8);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+        /*команда*/
+    .team{
+        background-color: var(--accent-background-color);
+    }
+    .team .team-title{
+        color: var(--title-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    .team .team-name{
+        background-color: var(--accent-background-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+    }
+    .team .team-text{
+        color: var(--primary-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+
+    }
+
+    .team-social-links:hover, 
+    .team-social-links:focus,
+    .team-social-links:active
+    {background-color: var(--accent-color);}
+
+    /*постоянные клиенты*/
+    .clients{
+        background-color: var(--accent-background-color);
+    }
+    .clients .clients-title{
+        color: var(--title-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+    .clients .clients-logo:hover,
+    .clients .clients-logo:focus,
+    .clients .clients-logo:active
+    {
+    background-color: var(--accent-color);
+    }
+
+    /*футер*/
+    .footer{
+        background-color:#2F303A ;
+    }
