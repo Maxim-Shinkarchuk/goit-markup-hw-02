@@ -2,15 +2,24 @@
     --primary-text-color:#757575;;
     --title-text-color:#212121;
     --accent-color:#2196F3;
-    --primary-background-color:#FFFFFF;
     --accent-background-color:#F5F4FA;
 }
+
+body{
+    background-color:#FFFFFF ;
+    color: var(--primary-text-colorprimary-text-color);
+}
+
+header{
+    color: var(--title-text-color:#212121;);
+}
 .logo{
-color:var(--accent-color) ; 
+color:var(--accent-color);
 }
-.logo.logo-head{
-    color:var(-title-text-color);
+.logo1{
+    color: var(--title-text-color);
 }
+
 
 .navigation {
     var(--title-text-color:#212121;)
@@ -24,6 +33,7 @@ color:#2196F3;)
     color:#2196F3;)
     }
 
-    .navigation:active {
+.navigation:active {
         color:#2196F3;)
         }
+        
