@@ -20,12 +20,30 @@ header{
     /*лого*/
     .logo{
         color:var(--accent-color);
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
         }
     .logo-header{
         color: var(--title-text-color);
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
         }
     .logo-footer{
         color: var(--accent-background-color);
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.03em;
 
         }
 
@@ -51,7 +69,14 @@ header{
         }
     /*стиль кнопок*/
     .button{
-        color: var(--accent-background-color);
+        color: var(--title-second-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+
         background-color: var(--accent-color);
         }
     /*стиль главного фона и цвет заголовка*/      
@@ -174,4 +199,13 @@ header{
     /*футер*/
     .footer{
         background-color:#2F303A ;
+    }
+    .footer .adress{
+        color:var(--title-second-text-color) ;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
     }
