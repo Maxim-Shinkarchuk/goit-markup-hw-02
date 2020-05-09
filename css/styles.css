@@ -23,8 +23,8 @@ header{
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 26px;
+        line-height: 31px;
         letter-spacing: 0.03em;
         }
     .logo-header{
@@ -32,8 +32,8 @@ header{
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 26px;
+        line-height: 31px;
         letter-spacing: 0.03em;
         }
     .logo-footer{
@@ -41,8 +41,8 @@ header{
         font-family: Raleway;
         font-style: normal;
         font-weight: bold;
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 26px;
+        line-height: 31px;
         letter-spacing: 0.03em;
 
         }
@@ -68,7 +68,7 @@ header{
         color:var(--accent-color);  
         }
     /*стиль кнопок*/
-    .button{
+    .button.primary{
         color: var(--title-second-text-color);
         font-family: Roboto;
         font-style: normal;
@@ -79,6 +79,22 @@ header{
 
         background-color: var(--accent-color);
         }
+        .button-second{
+            background-color: var(--accent-color);
+        }
+        .button-second .text-button{
+            color: var(--title-second-text-color);
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+        }
+
     /*стиль главного фона и цвет заголовка*/      
     .section{
         background-color:rgba(47, 48, 58, 0.8); ;
@@ -209,3 +225,34 @@ header{
         line-height: 24px;
         letter-spacing: 0.03em;
     }
+    .footer .contact{
+        color:rgba(255, 255, 255, 0.6) ;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+     }
+
+     .footer .slogan{
+        color: var(--title-second-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .footer .copyright{
+        color: rgba(255, 255, 255, 0.4);  
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.03em;
+      }
