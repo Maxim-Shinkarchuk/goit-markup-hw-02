@@ -236,10 +236,10 @@ header{
     background-color: var(--accent-color);
     }
     /*Портфолио*/
-    .portfolio{
+    .production .list{
         background-color: var(--title-second-text-color);
     }
-    .portfolio .portfolio-title{
+    .production .production-title{
         color: var(--title-text-color);
         font-family: Roboto;
         font-style: normal;
@@ -247,6 +247,25 @@ header{
         font-size: 18px;
         line-height: 36px;
         letter-spacing: 0.06em;
+    }
+    .production .name{
+     color: var(--primary-text-color);
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 30px;
+     letter-spacing: 0.03em;
+    }
+    .production .hide-text{
+        background-color: var(--accent-color);
+        color: var(--title-second-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
     }
 
     /*футер*/
