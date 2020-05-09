@@ -76,7 +76,6 @@ header{
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 0.06em;
-
         background-color: var(--accent-color);
         }
         .button-second{
@@ -93,6 +92,31 @@ header{
             align-items: center;
             text-align: center;
             letter-spacing: 0.06em;
+        }
+
+        .button-list{ 
+            background-color: var(--title-second-text-color);
+            color: var(--title-text-color);
+            }
+
+        .button-list .button { 
+                background-color: var(--accent-background-color);
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.03em
+            }
+        .button-list .button:hover { 
+                background-color: var(--accent-color);
+                color: var(--title-second-text-color);
+                            }
+        
+                
+
+        .main-portfolio{
+           background-color: var(--title-second-text-color); 
         }
 
     /*стиль главного фона и цвет заголовка*/      
@@ -210,6 +234,19 @@ header{
     .clients .clients-logo:active
     {
     background-color: var(--accent-color);
+    }
+    /*Портфолио*/
+    .portfolio{
+        background-color: var(--title-second-text-color);
+    }
+    .portfolio .portfolio-title{
+        color: var(--title-text-color);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
     }
 
     /*футер*/
