@@ -8,46 +8,43 @@
 /* стили для боди */
 body{
     background-color:#FFFFFF ;
-    color: var(--primary-text-colorprimary-text-color);
+    color: var(--primary-text-color);
        }
+a{
+        text-decoration: none;
+    }
 /* Убираем маркеры */
 ul {list-style-type: none;}
 
 /* стили для хедера */
 header{
-        color: var(--title-text-color:#212121;);
+        color: var(--title-text-color);
         }
     /*лого*/
-    .logo{
-        color:var(--accent-color);
-        font-family: Raleway; sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        text-decoration: none;
-        }
-    .logo-header{
+    
+
+    .logo > span {
+        color: var(--accent-color);
+     }
+     
+    .logo.header{
         color: var(--title-text-color);
-        font-family: Raleway; sans-serif;
+        font-family: Raleway sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        text-decoration: none;
-        }
-    .logo-footer{
+                }
+    .logo.footer{
         color: var(--accent-background-color);
-        font-family: Raleway; sans-serif;
+        font-family: Raleway sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        text-decoration: none;
-        }
+                }
 
     /*стиль навигации*/
     .site-nav .list {
@@ -62,8 +59,17 @@ header{
         color:var(--accent-color);
 }    
     /*стиль адреса*/
-              }
-    .adress .list {var(--title-text-color:#212121;)}
+              
+    .address-contact { 
+        color:var(--primary-text-color);
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+    .address-contact:hover, .address-contact:focus, .address-contact:active
 
     .adress-link:hover,
     .adress-link:focus{
@@ -72,7 +78,7 @@ header{
     /*стиль кнопок*/
     .button.primary{
         color: var(--title-second-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -85,7 +91,7 @@ header{
         }
         .button-second .text-button{
             color: var(--title-second-text-color);
-            font-family: Roboto; sans-serif;
+            font-family: Roboto sans-serif;
             font-style: normal;
             font-weight: 900;
             font-size: 16px;
@@ -103,7 +109,7 @@ header{
 
         .button-list .button { 
                 background-color: var(--accent-background-color);
-                font-family: Roboto; sans-serif;
+                font-family: Roboto sans-serif;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
@@ -130,7 +136,7 @@ header{
     }
     .features .title{
         color: var(--title-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -147,7 +153,7 @@ header{
 
     .features .text{
         color: var(--primary-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -156,7 +162,7 @@ header{
         }
         /*наш профиль*/
     .profile .title{
-            font-family: Roboto; sans-serif;
+            font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -168,7 +174,7 @@ header{
     .profile .text-title {
         color: var(--title-second-text-color);
         background: rgba(47, 48, 58, 0.8);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -182,7 +188,7 @@ header{
     }
     .team .team-title{
         color: var(--title-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -192,7 +198,7 @@ header{
     }
     .team .team-name{
         background-color: var(--accent-background-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -201,7 +207,7 @@ header{
     }
     .team .team-text{
         color: var(--primary-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -221,7 +227,7 @@ header{
     }
     .clients .clients-title{
         color: var(--title-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;
@@ -241,7 +247,7 @@ header{
     }
     .production .production-title{
         color: var(--title-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -250,7 +256,7 @@ header{
     }
     .production .name{
      color: var(--primary-text-color);
-     font-family: Roboto; sans-serif;
+     font-family: Roboto sans-serif;
      font-style: normal;
      font-weight: normal;
      font-size: 16px;
@@ -260,7 +266,7 @@ header{
     .production .hide-text{
         background-color: var(--accent-color);
         color: var(--title-second-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -274,7 +280,7 @@ header{
     }
     .footer .adress{
         color:var(--title-second-text-color) ;
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -283,7 +289,7 @@ header{
     }
     .footer .contact{
         color:rgba(255, 255, 255, 0.6) ;
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -293,7 +299,7 @@ header{
 
      .footer .slogan{
         color: var(--title-second-text-color);
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -304,7 +310,7 @@ header{
 
       .footer .copyright{
         color: rgba(255, 255, 255, 0.4);  
-        font-family: Roboto; sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 12px;
