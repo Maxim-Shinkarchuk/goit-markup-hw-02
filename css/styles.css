@@ -1,3 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
 :root {
     --primary-text-color:#757575;
     --title-text-color:#212121;
@@ -20,14 +29,51 @@ ul {list-style-type: none;}
 header{
         color: var(--title-text-color);
         }
-    /*лого*/
     
+    /*контейнер хедера*/
+   .page-header{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--title-second-text-color);
+    outline: 2px solid tomato;         
+   } 
 
+   .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid tomato;
+
+    background-color:var(--title-second-text-color);     
+   }
+
+   .container-adress{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1230px;
+    outline: 2px solid tomato;  
+
+    background-color:var(--title-second-text-color);
+   }
+
+   .container-adress ul{
+    display: flex;
+   }
+
+/*лого*/
     .logo > span {
         color: var(--accent-color);
      }
      
     .logo.header{
+        display: block;
+        margin-left: 200px;
+        margin-right: 1247px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
         color: var(--title-text-color);
         font-family: Raleway sans-serif;
         font-style: normal;
@@ -35,6 +81,9 @@ header{
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        
+
+
                 }
     .logo.footer{
         color: var(--accent-background-color);
@@ -47,9 +96,25 @@ header{
                 }
 
     /*стиль навигации*/
-    .site-nav .list {
-        var(--title-text-color:#212121;)
+    .site-nav{
+        display: block;
+        margin-top: 0em;
+        margin-bottom: 0em;
+        display: flex;
+    }
+    .site-nav .link{
+        display: block;
+        margin-bottom: 0px;
+
+        color: var(--title-text-color);
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
         }
+
     .site-nav .link:hover,
     .site-nav .link:focus, 
     .site-nav .link:active{
@@ -58,6 +123,7 @@ header{
     .site-nav .link.curent{
         color:var(--accent-color);
 }    
+
     /*стиль адреса*/
               
     .address-contact { 
@@ -68,37 +134,57 @@ header{
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-    }
+            }
+
     .address-contact:hover, .address-contact:focus, .address-contact:active
 
     .adress-link:hover,
     .adress-link:focus{
         color:var(--accent-color);  
         }
+
+        .container-adress .list{
+            margin-top: 0em;
+            margin-bottom: 0em;
+        }
     /*стиль кнопок*/
-    .button.primary{
-        color: var(--title-second-text-color);
+    .button-primary{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        padding: 10px 32px;
+         margin-top: 46px;
+        margin-bottom: 200px;
+        margin-left: 223px;
+        margin-right: 700px; 
+        border-radius: 3px;
+
         font-family: Roboto sans-serif;
+        color: var(--title-second-text-color);
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
-        background-color: var(--accent-color);
+        background-color: var(--accent-color);                 
         }
+
+
+
         .button-second{
             background-color: var(--accent-color);
         }
         .button-second .text-button{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            
             color: var(--title-second-text-color);
             font-family: Roboto sans-serif;
             font-style: normal;
             font-weight: 900;
             font-size: 16px;
             line-height: 1.88;
-            display: flex;
-            align-items: center;
-            text-align: center;
             letter-spacing: 0.06em;
         }
 
@@ -129,12 +215,71 @@ header{
 
     /*стиль главного фона и цвет заголовка*/      
     .section{
-        background-color:rgba(47, 48, 58, 0.8); ;
-        color: var(--title-second-text-color);}   
+        margin-left: auto;
+        margin-right: auto;
+        width: 1600px;
+        height: 600px;
+        outline: 1px solid tomato;
+        padding-top: 200px;
+        padding-left: 477px;
+        padding-right: 477px;
 
+        background-color:rgba(47, 48, 58, 0.8); ;
+        color: var(--title-second-text-color);
+        }   
+
+    .title{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 646px;
+        height: 104px;
+        outline: 1px solid tomato;
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        color: var(--title-second-text-color);
+        text-align: center;
+           }
+    
     /*особенности*/
+    .features{
+        height: 439px;
+        width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -19px; 
+        margin-bottom: 0px;
+        display: flex
+                
+        background-color: yellowgreen;
+        }
+    
+    
+    .features>li{
+        width: 278px;
+        margin-right: 29px;
+            }
+                
+    .img{ 
+        width: 278px;
+        height: 120px;
+        background-color: var(--accent-color);
+        padding-top: 25px;
+        padding-left: 106px;
+        border-radius: 4px;
+        justify-content: space-between;
+        
     }
+
     .features .title{
+        width: 278px;
+        height: 131px;
+        padding-top: 30px;
+        padding-left: 0px;
+        
         color: var(--title-text-color);
         font-family: Roboto sans-serif;
         font-style: normal;
@@ -143,6 +288,7 @@ header{
         line-height: 1.14;
         letter-spacing: 0.03em;
         }
+
     .features .image{
         background-color: var(--accent-background-color);
         }   
@@ -152,17 +298,20 @@ header{
         { background-color: var(--accent-color);}
 
     .features .text{
+        margin-top: -70px;
+        
         color: var(--primary-text-color);
         font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 1.71;
-        letter-spacing: 0.03em
+        letter-spacing: 0.03em;
         }
+
         /*наш профиль*/
     .profile .title{
-            font-family: Roboto sans-serif;
+        font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 36px;

@@ -5,59 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!--Шапка-->
-    <header>
+    <header class="page-header">
     <!--Меню навигации-->
-        <nav>
-            <a class="logo header" href="./index.html"><span>Web</span>Studio</a>
-            <ul class="site-nav list">
-            <li>
-                <a href="./index.html" class="link curent">
-                    Студия
-                </a>
-             </li>
-
-            <li>
-                <a href="./portfolio.html" class="link">
-                    Портфолио
-                </a>
-            </li>
-
-            <li>
-                <a href="" class="link">
-                    Контакты
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <div class="container">
+            <nav>
+                <a class="logo header" href="./index.html"><span>Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li>
+                        <a href="./index.html" class="link curent">
+                            Студия
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="./portfolio.html" class="link">
+                            Портфолио
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="" class="link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <!--Связь-->
-        <address>
-            <ul>
-                <li>
-                    <img src="./images/contacts/envelope.svg" alt="Email">
-                    <a href="mailto:info@devstudio.com" class="address-contact">
-                        mailto:info@devstudio.com
-                    </a>
-                </li>
-                <li>
-                    <img src="./images/contacts/smartphone.svg" alt="Smartphone">
-                    <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container-adress">
+            <address>
+                <ul class="list">
+                    <li>
+                        <img src="./images/contacts/envelope.svg" alt="Email">
+                        <a href="mailto:info@devstudio.com" class="address-contact">
+                            mailto:info@devstudio.com
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./images/contacts/smartphone.svg" alt="Smartphone">
+                        <a href="tel:+380961111111" class="address-contact">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
 <main>
     <!--Главный блок-->
     <section class="section">
-        <h1 class="section title">Эффективные решения вашего бизнеса</h1>
+        
+            <h1 class="title">Эффективные решения вашего бизнеса</h1>
+        
         <div>
             <!--Фон-->
         </div>
-            <a href="" class="button primary">Заказать услугу</a>
+        <a href="" class="button-primary">Заказать услугу</a>
     </section>
 
 <!--Наши Особенности-->
@@ -65,7 +72,7 @@
     <h2><!--Скрытый заголовок--></h2>
 <ul class="features list">
     <li>
-        <div>
+        <div class="img">
         <img src="./images/Features/antenna1.svg" alt="антена" width="70" height="70" class="image">
         </div>
         <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
@@ -73,7 +80,7 @@
     </li>
 
     <li>
-        <div>
+        <div class="img">
         <img src="./images/Features/clock1.svg" alt="часы" width="70" height="70" class="image">
         </div>
         <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
@@ -81,7 +88,7 @@
     </li>
 
     <li>
-        <div>
+        <div class="img">
         <img src="./images/Features/diagram1.svg" alt="диаграмма" width="70" height="70" class="image">
         </div>
         <h3 class="title">ПЛАНИРОВАНИЕ</h3>
@@ -89,7 +96,7 @@
     </li>
 
     <li>
-        <div>
+        <div class="img">
         <img src="./images/Features/astronaut1.svg" alt="астронавт" width="70" height="70" class="image">
         </div>
         <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
