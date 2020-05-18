@@ -71,6 +71,34 @@ header{
     margin-left: 50px;
 }
 
+ /*стиль навигации*/
+ .site-nav{
+    display: inline-block;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    display: flex;
+}
+.site-nav .link{
+    display: block;
+    margin-bottom: 0px;
+
+    color: var(--title-text-color);
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+
+.site-nav .link:hover,
+.site-nav .link:focus, 
+.site-nav .link:active{
+    color:var(--accent-color);
+}
+.site-nav .link.curent{
+    color:var(--accent-color);
+}    
 
    .contact-nav{
     display: block;
@@ -90,7 +118,30 @@ header{
 .contact-nav .img-item{
     margin-right: 10px ;
 }
-      
+
+    /*стиль адреса*/
+              
+    .contact-nav { 
+        color:var(--primary-text-color);
+        font-family: Roboto sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+            }
+
+    .address-contact:hover, .address-contact:focus, .address-contact:active
+
+    .adress-link:hover,
+    .adress-link:focus{
+        color:var(--accent-color);  
+        }
+
+        .container-adress .list{
+            margin-top: 0em;
+            margin-bottom: 0em;
+        }  
 
 /*лого*/
     .logo > span {
@@ -124,58 +175,9 @@ header{
         letter-spacing: 0.03em;
                 }
 
-    /*стиль навигации*/
-    .site-nav{
-        display: inline-block;
-        margin-top: 0em;
-        margin-bottom: 0em;
-        display: flex;
-    }
-    .site-nav .link{
-        display: block;
-        margin-bottom: 0px;
+   
 
-        color: var(--title-text-color);
-        font-family: Roboto sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        }
-
-    .site-nav .link:hover,
-    .site-nav .link:focus, 
-    .site-nav .link:active{
-        color:var(--accent-color);
-    }
-    .site-nav .link.curent{
-        color:var(--accent-color);
-}    
-
-    /*стиль адреса*/
-              
-    .contact-nav { 
-        color:var(--primary-text-color);
-        font-family: Roboto sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-            }
-
-    .address-contact:hover, .address-contact:focus, .address-contact:active
-
-    .adress-link:hover,
-    .adress-link:focus{
-        color:var(--accent-color);  
-        }
-
-        .container-adress .list{
-            margin-top: 0em;
-            margin-bottom: 0em;
-        }
+    
     /*стиль кнопок*/
     .button-primary{
         display: inline-block;
@@ -183,9 +185,8 @@ header{
         height: 50px;
         padding: 10px 32px;
          margin-top: 46px;
-        margin-bottom: 200px;
-        margin-left: 223px;
-        margin-right: 700px; 
+        margin-left: 200px;
+         
         border-radius: 3px;
 
         font-family: Roboto sans-serif;
@@ -257,57 +258,78 @@ header{
         color: var(--title-second-text-color);
         }   
 
-    .title{
-        margin-top: 0px;
-        margin-bottom: 0px;
-        width: 646px;
-        height: 104px;
-        outline: 1px solid tomato;
-        font-family: Roboto sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        letter-spacing: 0.06em;
-        color: var(--title-second-text-color);
-        text-align: center;
-           }
+        .section .title{
+            
+            width: 646px;
+            height: 104px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            text-align: center;
+            font-family: Roboto sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            color: var(--title-second-text-color);
+                       }
+
+/*особенности*/
+.features{
+    display: flex
+    height: 251px;
+    width: 1230px;
+    padding-top: 94px;
+    padding-bottom: 94px;;
+    margin-left: auto;
+    margin-right: auto;
     
-    /*особенности*/
-    .features{
-        height: 439px;
-        width: 1230px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -19px; 
-        margin-bottom: 0px;
-        display: flex
-                
-        background-color: yellowgreen;
-        }
+    }
+
+.features-list{
+    display: flex;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
     
-    
-    .features>li{
-        width: 278px;
-        margin-right: 29px;
-            }
-                
-    .img{ 
+}
+
+.features .item + .item{
+    margin-left: 29px;
+}
+                        
+    .image{ 
         width: 278px;
         height: 120px;
-        background-color: var(--accent-color);
+        background-color: var(--accent-background-color);
         padding-top: 25px;
+        padding-bottom: 25px;
         padding-left: 106px;
+        padding-right: 106px;
         border-radius: 4px;
         justify-content: space-between;
         
     }
 
+    .features .image{
+        background-color: var(--accent-background-color);
+        }   
+    .features .image:hover,
+    .features .image:focus,
+    .features .image:active
+        { background-color: var(--accent-color);
+        }
+
     .features .title{
+        align-self: flex-start;
         width: 278px;
-        height: 131px;
+        height: 16px;
         padding-top: 30px;
+        padding-bottom: 10px;
         padding-left: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
         
         color: var(--title-text-color);
         font-family: Roboto sans-serif;
@@ -318,17 +340,10 @@ header{
         letter-spacing: 0.03em;
         }
 
-    .features .image{
-        background-color: var(--accent-background-color);
-        }   
-    .features .image:hover,
-    .features .image:focus,
-    .features .image:active
-        { background-color: var(--accent-color);}
+    
 
     .features .text{
-        margin-top: -70px;
-        
+               
         color: var(--primary-text-color);
         font-family: Roboto sans-serif;
         font-style: normal;
@@ -339,7 +354,14 @@ header{
         }
 
         /*наш профиль*/
-    .profile .title{
+    
+        .profile .title{
+        width: 1230px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
         font-family: Roboto sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -349,7 +371,29 @@ header{
         letter-spacing: 0.03em;
         }   
 
+.profile .box{
+    width: 380px;
+    height: 294px;
+}
+
+.profile .image-prof{
+    width: 380px;
+    height: 294px;
+}
+
+.profile .list{
+    display: flex;
+}
+
+.profile .item + .item{
+    margin-left: 30px;
+}
+
     .profile .text-title {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+        
         color: var(--title-second-text-color);
         background: rgba(47, 48, 58, 0.8);
         font-family: Roboto sans-serif;
