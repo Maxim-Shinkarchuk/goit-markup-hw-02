@@ -35,11 +35,14 @@ header{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    width: 1230px;
+    height: 80px;
     background-color: var(--title-second-text-color);
     outline: 2px solid tomato;         
    } 
 
    .container{
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 1230px;
@@ -48,8 +51,13 @@ header{
     background-color:var(--title-second-text-color);     
    }
 
+.nav-container{
+    display: flex;
+    width: 1230px;
+} 
+
    .container-adress{
-    
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 1230px;
@@ -58,9 +66,7 @@ header{
     background-color:var(--title-second-text-color);
    }
 
-   .container-adress ul{
-    display: flex;
-   }
+   
 
 /*лого*/
     .logo > span {
